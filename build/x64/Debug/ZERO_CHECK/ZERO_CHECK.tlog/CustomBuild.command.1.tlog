@@ -1,0 +1,10 @@
+^E:\PRD_CPP\BUILD\CMAKEFILES\C83DF8D02D831913F7DAAA39C87E3166\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/PRD_cpp -BE:/PRD_cpp/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file E:/PRD_cpp/build/RandomDefenseGame.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
